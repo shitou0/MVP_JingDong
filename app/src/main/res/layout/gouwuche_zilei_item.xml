@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/gouwuche_zi_checkBox"-->
+        <!--style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="0.5" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/gouwuche_zi_image"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:src="@mipmap/ic_launcher" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="3"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/gouwuche_zi_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:text="11111"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="19sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/gouwuche_zi_price"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="22222222222222"-->
+            <!--android:textColor="#FF8000"-->
+            <!--android:textSize="21sp" />-->
+
+    <!--</LinearLayout>-->
+    <CheckBox
+        android:id="@+id/child_cb"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/child_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/child_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:id="@+id/child_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"
+                android:textColor="#f00" />
+            <com.example.mvp_jingdong.custom.MyAdd_Sub_View
+                android:id="@+id/child_add_sub"
+                android:layout_width="100dp"
+                android:layout_height="30dp"></com.example.mvp_jingdong.custom.MyAdd_Sub_View>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

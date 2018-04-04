@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_background"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    <!--//搜索的放大镜图片-->
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/a_4" />
+    <!--//搜索框-->
+    <!--android:focusable="false"   这只默认的 进入  不弹出键盘 -->
+    <EditText
+        android:focusable="false"
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@null" />
+    <!--//搜索框里面小机器人-->
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/root" />
+</LinearLayout>

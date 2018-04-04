@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:text="发现"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75sp"
+        android:background="#000000"/>
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/faxian_pager_Sliding"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"></com.astuetz.PagerSlidingTabStrip>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/faxian_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--把checkbox  设置为圆形-->
+    <!--style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_alignTop="@+id/imageView"
+           android:layout_marginLeft="144dp"
+           android:layout_marginStart="144dp"
+           android:gravity="center"
+           android:text="购物车"
+           android:textColor="#000000"
+           android:textSize="20sp" />
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="30sp"
+           android:layout_height="30sp"
+           android:layout_centerVertical="true"
+           android:layout_toEndOf="@+id/textView"
+           android:layout_toRightOf="@+id/textView"
+           android:src="@drawable/order_002" />
+
+       <ImageView
+           android:id="@+id/gouwuche_xiaoxi"
+           android:layout_width="30sp"
+           android:layout_height="30sp"
+           android:layout_alignBottom="@+id/textView"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginEnd="14dp"
+           android:layout_marginRight="14dp"
+           android:src="@drawable/order_msg" />
+   </RelativeLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75sp"
+        android:background="#808080" />
+    <ExpandableListView
+        android:id="@+id/expand_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></ExpandableListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75sp"
+        android:background="#808080" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/gouwuche_checkBox"
+                style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="全选"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="合计:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/sum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gouwuche_qujiesuan_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F23030"
+            android:text="去结算" />
+    </LinearLayout>
+
+
+</LinearLayout>

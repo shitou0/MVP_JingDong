@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--实现activity中间进行跳转-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:zAdjustment="top">
+    <translate
+        android:duration="700"
+        android:fromXDelta="0%p"
+        android:toXDelta="100%p" />
+</set>
